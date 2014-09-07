@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Tab Closer",
+  "description": "This extension removes fb tab",
+  "version": "1.0",
+
+ "permissions": [
+    "tabs"
+  ],
+  
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}

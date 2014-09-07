@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Quora Photo Zoom",  
+  "description": "Hover over any image on quora to dynamically zoom it beautifully!",
+  "version": "1.0.0.3",
+
+  "web_accessible_resources": [
+    "icon_black.png",
+    "icon.png",
+    "download.gif"
+  ],
+
+  "icons": { "128": "icon128.png" },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.quora.com/*","https://*.quora.com/*"],
+      "js": ["core.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
